@@ -74,7 +74,7 @@ class _ListParkingsState extends State<ListParkings> {
         title: const Center(
           child: Text("A P A R C A ' M"),
         ),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Color.fromARGB(255, 96, 125, 139),
       ),
       body: Column(
         children: <Widget>[

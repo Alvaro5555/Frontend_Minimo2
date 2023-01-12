@@ -68,7 +68,7 @@ class _MyParkingsState extends State<MyParkings> {
         title: new Center(
           child: new Text("My Parkings"),
         ),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Color.fromRGBO(96, 125, 139, 1),
       ),
       body: Column(
         children: <Widget>[

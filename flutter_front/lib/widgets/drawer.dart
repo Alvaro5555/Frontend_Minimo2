@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_front/views/Chatbot.dart';
 import 'package:flutter_front/views/ListParkings.dart';
 import 'package:flutter_front/views/MyParkings.dart';
 import 'package:flutter_front/views/UserInfo.dart';
@@ -6,6 +7,7 @@ import 'package:flutter_front/views/myBookings.dart';
 import 'package:flutter_front/views/MyFavourites.dart';
 import 'package:flutter_front/services/localStorage.dart';
 import 'package:flutter_front/views/login.dart';
+import 'package:flutter_front/views/Chatbot.dart';
 
 import '../views/NewParking.dart';
 
@@ -93,6 +95,16 @@ class DrawerScreen extends StatelessWidget {
             onTap: () {
               Navigator.of(context).push(MaterialPageRoute(
                   builder: (context) => const NewParkingPage()));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.chat_bubble_outline_sharp),
+            title: const Text(
+              'ChatBot',
+            ),
+            onTap: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => ChatBot()));
             },
           ),
           ListTile(
